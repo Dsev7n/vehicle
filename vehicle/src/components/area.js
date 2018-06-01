@@ -7,13 +7,21 @@ var component = {
       seat: '8888',
       time: (new Date()).toLocaleString(),
       price: 6,
-      plate: '粤A BG8888'
+      plate: '粤A BG8888',
+      isShow: false
     }
   },
-  methods: {}
+  methods: {
+    showPrice() {
+      this.isShow = true;
+    },
+    hidePrice() {
+      this.isShow = false;
+    }
+  }
 }
 var _page = {
-  getData: function() {
+  getData: function () {
 
   }
 }

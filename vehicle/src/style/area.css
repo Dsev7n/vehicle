@@ -1,7 +1,12 @@
 .bg-main {
     position: relative;
-    height: 100vw;
+    height: 100vh;
     background: radial-gradient(50% 50%, #1395ba, #fff);
+    outline: none;
+}
+.bg-fixBox .ishide {
+    background: #ccc;
+    opacity: 0.5;
 }
 .bg-img {
     display: block;
@@ -30,18 +35,34 @@ input, select {
 .bg-fixBox {
     position: fixed;
     bottom: 0;
+    left: 0;
+    height: 150px;
+    outline: none;
+    /* transform: translateY(0); */
+    transition: height 2s;
+    
 }
 .bg-line {
+    position: relative;
     width: 100vw;
-    line-height: 2;
+    height: 50px;
+    line-height: 50px;
     font-size: 16px;
     font-weight: 400;
     border-bottom: 1px solid #ccc;
 }
+.bg-block {
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+}
 .bg-left {
     position: absolute;
-    left: 0;
+    left: 5vw;
 }
 .bg-right {
-    
+    position: absolute;
+    /* display: inline-block; */
+
+    right: 5vw;
 }
