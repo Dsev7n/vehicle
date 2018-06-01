@@ -4,4 +4,26 @@
     width: 60%;
     border-radius: 5px;
     border: none;
+    background: #70cbe4;
+    
+}
+.bg-button:active {
+    background: #1395ba;
+}
+.bg-main {
+    height: 100vw;
+    background: radial-gradient(50% 50%, #1395ba, #fff);
+}
+input, select {
+    outline: none;
+    border: none;
+}
+.bg-img {
+    display: block;
+    height: 80px;
+    width: 80px;
+    background: url(../image/car.png);
+    background-size: 100%;
+    margin: 50px auto;
+    
 }

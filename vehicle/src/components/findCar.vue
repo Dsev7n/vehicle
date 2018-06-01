@@ -12,6 +12,7 @@
         <input type="text">
         <!-- <router-link to="/area">下一步</router-link> to="/area"> -->
         <input type="button" value="下一步" class="bg-button">
+        <i class="bg-img"></i>
     </div>
 </template>
 
