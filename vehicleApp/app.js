@@ -6,7 +6,7 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 
 
-var indexRouter = require('./routes/index');
+var indexRouter = require('../vehicle/dist/index.html');
 var usersRouter = require('./routes/users');
 
 var app = express();
