@@ -17,12 +17,29 @@ var component = {
     },
     hidePrice() {
       this.isShow = false;
+    },
+    getData() {
+      _page.getData();
     }
   }
 }
 var _page = {
   getData: function () {
-
+    var url = "http://localhost:3000";
+    var options = {
+      hostname: 'localhost',
+      port: 3000,
+      path: '/',
+      method: 'POST',
+      body: "{'text': '粤123456'}"
+    };
+    var myRequest = new Request(url, options);
+    // var myRequest = new Request(url, options);
+    fetch(myRequest).then(function(res) {
+      return res.text();
+    }).then(function(data) {
+      console.log(data);
+    })
   }
 }
 export default component
