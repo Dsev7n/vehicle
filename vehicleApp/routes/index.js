@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var indexRouter = require('../vehicle/dist/index.html');
+// var indexRouter = require('../vehicle/dist/index.html');
 
 /* GET home page. */
 // router.post('/', function(req, res) {
@@ -16,7 +16,7 @@ var indexRouter = require('../vehicle/dist/index.html');
 //   res.send('成功回掉');
 // });
 router.get('/', function(req, res, next) {
-  res.render(indexRouter);
+  res.render('1234');
 });
 
 module.exports = router;
