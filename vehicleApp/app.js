@@ -23,6 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(bodyParser.json());
 
+app.use(express.static('../vehicle/dist'))
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
