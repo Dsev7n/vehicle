@@ -1,4 +1,4 @@
-<widget id="A6072445662178" version="0.0.0">
+<widget id="A6073668117424" version="0.0.0">
     <name>BG车牌</name>
     <content src="./vehicle/dist/index.html"/>
     <access origin="*"/>
