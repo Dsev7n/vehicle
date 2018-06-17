@@ -7,16 +7,20 @@
         
         <div class="bg-footer">
             <router-link to="/findCar"  class="bg-block">
-        <div>
+            <div>
                 <i class="bg-icon is-find"></i>
                 <p>寻车</p>
             </div>
-        </router-link>
+            </router-link>
             
-            <div class="bg-block">
+        <div class="bg-block">
+            <router-link to="/park" class="bg-block">
+            <div>
                 <i class="bg-icon is-park"></i>
                 <p>停车</p>
             </div>
+            </router-link>
+        </div>
         </div>
     </div>
 </template>
