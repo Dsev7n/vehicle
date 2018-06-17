@@ -1,12 +1,14 @@
 <template>
+
     <body>
+        <bg-back> </bg-back>
         <div id="park">
-            <router-link to="/">
+            <!-- <router-link to="/">
                 <div class="back">
                     <p>
                         < 返回</p>
                 </div>
-            </router-link>
+            </router-link> -->
             <ul>
                 <li class="subarea" v-for="(item,index) in items" @click="display(index)">
                     <p class="mark">{{item.marker}}区</p>

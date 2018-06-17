@@ -1,5 +1,9 @@
 import VueRouter from 'vue-router';
+import bgBack from './bgBack.vue';
 var component = {
+  components:{
+		'bgBack':	bgBack
+	},
   name: "FindCar",
   data: function () {
     return {
