@@ -12,7 +12,7 @@
 }
 .bg-main {
     height: 100vw;
-    background: radial-gradient(50% 50%, #1395ba, #fff);
+    
 }
 input, select {
     outline: none;
@@ -26,4 +26,10 @@ input, select {
     background-size: 100%;
     margin: 50px auto;
     
+}
+.bg-content{
+    margin-top:4vh;
+    padding-top:8vh; 
+    height: 80vw;
+    background: radial-gradient(50% 50%, #1395ba, #fff);
 }

@@ -5,6 +5,7 @@ import Home from '@/components/home.vue';
 import FindCar from '@/components/findCar.vue';
 import Park from '@/components/park.vue';
 import Area from '@/components/area.vue';
+import bgBack from '@/components/bgBack.vue';
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/area',
       name: 'Area',
       component: Area
+    },
+    {
+      path:'/bgBack',
+      name:'bgBack',
+      component:bgBack
     }
   ]
 })

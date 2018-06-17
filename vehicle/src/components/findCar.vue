@@ -1,5 +1,7 @@
 <template>
     <div class="bg-main">
+        <bg-back> </bg-back>
+        <div class="bg-content">
         <p>请输入完整车牌号码</p>
         <select name="area" id="area"  v-model="selected">
             <option>粤</option>
@@ -39,6 +41,7 @@
         <!-- <router-link to="/area">下一步</router-link> to="/area"> -->
         <input type="button" value="下一步" class="bg-button" v-on:click="onSearchTap">
         <i class="bg-img"></i>
+        </div>
     </div>
 </template>
 

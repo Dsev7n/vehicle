@@ -1,5 +1,9 @@
 import VueRouter from 'vue-router';
+import bgBack from './bgBack.vue';
 var component = {
+	components:{
+		'bgBack':	bgBack
+	},
   name: "Park",
   data () {
     
@@ -16,9 +20,6 @@ var component = {
     }
   },
   methods: {
-
-	// 這個事件不要點太快，click動作一般有300ms的延時時間，
-	// 但是這裡事件好像不止300ms， 原因不明， 你可以試試點塊一點， 錯誤很奇怪
       display:function(index){
 		  this.isShow = index;
         },

@@ -1,0 +1,27 @@
+.bg-icon {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      background: url(../image/icon-back.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+}
+.bg-header {
+      height: 30px;
+      background: #fff;
+      border-bottom: 1px solid #ccc;
+      padding-top:5vh;
+}
+span{
+      position: absolute;
+    left: 30px;
+    vertical-align: middle;
+    line-height: 25px;
+}
+i{
+    position: absolute;
+    left: 6px;
+    vertical-align: middle;
+
+}
