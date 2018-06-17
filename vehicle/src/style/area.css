@@ -1,15 +1,25 @@
+body{
+  margin: 0 !important;
+}
 .bg-main {
   position: relative;
-  /* height: 100vh; */
+  height: 100vw;
   background: radial-gradient(50% 50%, #1395ba, #fff);
   outline: none;
 }
 
 .bg-fixBox .ishide {
-  background: #ccc;
   opacity: 0.5;
 }
-
+.bg{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top:0;
+  left:0;
+  background: rgba(0,0,0,0.1);
+  z-index:100;
+}
 .bg-img {
   display: block;
   height: 80px;
@@ -45,6 +55,10 @@ select {
   height: 150px;
   outline: none;
   border-top: 1px solid #ccc;
+  background: #fff;
+
+  z-index: 999;
+
   /* transform: translateY(0); */
   /* transition: height 10s; */
 }

@@ -1,6 +1,8 @@
 <template>
+<div class="bg-body">
+        <bg-back> </bg-back>
     <div class="bg-main" v-on:focus="hidePrice()" tabindex="1">
-        
+        <div class="bg" @click="close()" v-show="isShow"> </div>
         <div class="bg-box">
             <i class="bg-img"></i>
             <h2>{{floor}}区</h2>
@@ -22,6 +24,8 @@
             </div>
         </div>
     </div>
+</div>
+
 </template>
 <script>
 import Area from "./area";
