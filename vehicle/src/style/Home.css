@@ -29,7 +29,15 @@
 }
 .bg-block {
     width: 40%;
+    text-decoration: none;
+    color: #333;
     /* border-right: 4px solid; */
+}
+.bg-header {
+    height: 30px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    padding-top:5vh;
 }
 .bg-icon {
     display: inline-block;

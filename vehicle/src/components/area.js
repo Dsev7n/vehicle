@@ -1,6 +1,11 @@
 import VueRouter from 'vue-router';
+import bgBack from './bgBack.vue';
+
 var component = {
   name: "Area",
+  components:{
+		'bgBack':	bgBack
+	},
   data: function () {
     return {
       floor: localStorage.getItem('floor'),

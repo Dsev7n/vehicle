@@ -1,5 +1,10 @@
 <template>
-    <div class="bg-main">
+<div class="bg-body">
+    <div class="bg-header">
+            BG车牌识别
+    </div>
+        <div class="bg-main">
+       
         <div class="bg-middle">
             <div class="bg-img"></div>
             <p class="bg-text">欢迎使用<em>BG</em>停车系统</p>
@@ -23,6 +28,8 @@
         </div>
         </div>
     </div>
+</div>
+
 </template>
 
 <script>
