@@ -1,47 +1,77 @@
 .bg-main {
-    position: relative;
-    height: 100vw;
-    background: radial-gradient(50% 50%, #1395ba, #fff);
+  position: relative;
+  /* height: 100vh; */
+  background: radial-gradient(50% 50%, #1395ba, #fff);
+  outline: none;
 }
+
+.bg-fixBox .ishide {
+  background: #ccc;
+  opacity: 0.5;
+}
+
 .bg-img {
-    display: block;
-    height: 80px;
-    width: 80px;
-    background: url(../image/parkCar.png);
-    background-size: 100%;
-    margin: 0 auto; 
+  display: block;
+  height: 80px;
+  width: 80px;
+  background: url(../image/parkCar.png);
+  background-size: 100%;
+  margin: 0 auto;
 }
+
 .bg-button {
-    margin-top: 10px;
-    padding: 5px 0;
-    width: 60%;
-    border-radius: 5px;
-    border: none;
-    background: #70cbe4;
-    
+  margin-top: 10px;
+  padding: 5px 0;
+  width: 60%;
+  border-radius: 5px;
+  border: none;
+  background: #70cbe4;
 }
+
 .bg-button:active {
-    background: #1395ba;
+  background: #1395ba;
 }
-input, select {
-    outline: none;
-    border: none;
+
+input,
+select {
+  outline: none;
+  border: none;
 }
+
 .bg-fixBox {
-    position: fixed;
-    bottom: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 150px;
+  outline: none;
+  border-top: 1px solid #ccc;
+  /* transform: translateY(0); */
+  /* transition: height 10s; */
 }
+
 .bg-line {
-    width: 100vw;
-    line-height: 2;
-    font-size: 16px;
-    font-weight: 400;
-    border-bottom: 1px solid #ccc;
+  position: relative;
+  width: 100vw;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  border-bottom: 1px solid #ccc;
 }
+
+.bg-block {
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+}
+
 .bg-left {
-    position: absolute;
-    left: 0;
+  position: absolute;
+  left: 5vw;
 }
+
 .bg-right {
-    
+  position: absolute;
+  /* display: inline-block; */
+  right: 5vw;
 }

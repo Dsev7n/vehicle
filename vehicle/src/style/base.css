@@ -1,8 +1,22 @@
 .bg-main {
-    height: 100vw;
+    /* height: 100vw; */
     background: radial-gradient(50% 50%, #1395ba, #fff);
 }
 input, select {
     outline: none;
     border: none;
+}
+.bg-header {
+    height: 30px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+.bg-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 30px;
+}
+.is-back {
+    background-image: url(../image/icon-back.png);
 }
