@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>vehicle</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>vehicle</title>
+</head>
+
+<body>
+  <style>
+    .bg-header {
+      height: 30px;
+      background: #fff;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .bg-icon {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      line-height: 30px;
+    }
+
+    .is-back {
+      background-image: url(../image/icon-back.png);
+    }
+
+  </style>
+  <div class="bg-header">
+    <i class="bg-icon is-back"></i>
+    <span onclick="goBack()">返回</span>
+  </div>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+<script>
+  function goBack() {
+    history.go(-1);
+  }
+
+</script>
+
 </html>
