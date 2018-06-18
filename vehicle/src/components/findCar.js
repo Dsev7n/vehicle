@@ -36,26 +36,6 @@ var component = {
         alert('请输入具体车牌号');
         return;
       }
-      var url = "http://120.77.150.28:80/users";
-      var data = {
-        verticle: localStorage.getItem('verticle')
-      };
-      var options = {
-        hostname: 'localhost',
-        port: 3000,
-        path: '/',
-        method: 'POST',
-        body: JSON.stringify(data)
-      };
-      fetch(url, options).then(function (res) {
-        return res.text();
-      }).then(function (res) {
-        localStorage.setItem('res', res);
-        var data = JSON.parse(res);
-        localStorage.setItem('verticle', data.veh);
-        localStorage.setItem('datatime', data.datatime);
-        localStorage.setItem('floor', data.model);
-      })
       window.location.href = "http://localhost:8888/#/area";
     }
   }

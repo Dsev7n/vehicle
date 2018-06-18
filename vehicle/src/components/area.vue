@@ -11,12 +11,12 @@
         </div>
         <div class="bg-fixBox" v-show="isShow" v-on:blur="hidePrice()" tabindex="0" :class="{'ishide':!isShow}">
             <div class="bg-block">
-                <span class="bg-left">缴费</span>
+                <span class="bg-left" v-on:click="onPayTap()">缴费</span>
                 <span class="bg-right" v-on:click="hidePrice()">取消</span>
             </div>
             <div class="bg-line">
                 <span class="bg-left">车牌：</span>
-                <span>{{plate}}</span>
+                <span class="bg-right">{{plate}}</span>
             </div>
             <div class="bg-line">
                 <span class="bg-left">价格：</span>

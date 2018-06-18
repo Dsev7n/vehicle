@@ -39,7 +39,25 @@ var component = {
     },
     getData() {
       _page.getData();
-    }
+    },
+    onPayTap: function() {
+      var url = "http://localhost:3000/payment";
+      var data = {
+        marker: this.floor
+      };
+      var options = {
+        hostname: 'localhost',
+        port: 3000,
+        path: '/',
+        method: 'POST',
+        body: JSON.stringify(data)
+      };
+      fetch(url,options).then(function(res) {
+        return res.text();
+      }).then(function(data) {
+        console.log(JSON.parse(data));
+      })
+    },
   }
 }
 var _page = {
@@ -55,10 +73,6 @@ var _page = {
       method: 'POST',
       body: JSON.stringify(data)
     };
-
-
-
-
   },
   formatDate: function () {　　
     var year = now.getFullYear(),
