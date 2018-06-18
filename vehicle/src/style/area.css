@@ -3,6 +3,7 @@ body{
 }
 .bg-main {
   position: relative;
+  padding-top: 20px;
   height: 100vw;
   background: radial-gradient(50% 50%, #1395ba, #fff);
   outline: none;
